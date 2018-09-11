@@ -3,9 +3,9 @@ const nodemailer = require('nodemailer')
 let config
 
 try {
-  config = require('./send-it.config.json')
+  config = require('./send-it.config')
 } catch (error) {
-  throw new Error('`send-it.config.json` not found on this level directory', error)
+  throw new Error('`send-it.config.js` not found on this level directory', error)
 }
 
 const transporter = nodemailer.createTransport({

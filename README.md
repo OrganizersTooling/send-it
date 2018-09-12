@@ -33,7 +33,7 @@ _send-it.config.js
 ```js
 module.exports = {
   name: 'Your name',
-  email: 'igorluizhalfeld@gmail.comhey@gmail.com',
+  email: 'hey@gmail.com',
   password: 'passwordOfEmailAbove',
   subject: 'SendIt is Awesome!',
   emailText: `

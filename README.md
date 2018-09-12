@@ -4,6 +4,10 @@
   <p align="center">Easy way to send emails to multiple recipers.</p>
 
   <p align="center">
+    <img src="templates/assets/sendit-demo.png" style="width: 100%; height: auto" />
+  </p>
+
+  <p align="center">
   <a href="http://standardjs.com/">
     <img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg">
   </a>
@@ -25,16 +29,20 @@ npm install -g send-it
 send-it
 ```
 
-_send-it.config.json_
-```json
-{
-  "name": "Your name",
-  "email": "hey@gmail.com",
-  "password": "passOfEmailAbove",
-  "subject": "Email testing sender",
-  "recipers": [
-    "foo@example.com",
-    "bar@example.me"
+_send-it.config.js
+```js
+module.exports = {
+  name: 'Your name',
+  email: 'igorluizhalfeld@gmail.comhey@gmail.com',
+  password: 'passwordOfEmailAbove',
+  subject: 'SendIt is Awesome!',
+  emailText: `
+    # Hello World    
+    This is a paragrapher with **strong** and _italic_ texts!
+  `,
+  recipers: [
+    'foo@example.com',
+    'bar@example.me'
   ]
 }
 ```

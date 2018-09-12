@@ -1,4 +1,6 @@
 const nodemailer = require('nodemailer')
+const { readFileSync } = require('fs')
+const { mountHelperOptions } = require('./helpers')
 
 let config
 
@@ -20,22 +22,20 @@ const transporter = nodemailer.createTransport({
     rejectUnauthorized: false
   }
 })
-const HELPER_OPTIONS = {
-  from: `"${config.name}" <${config.email}>`,
-  subject: config.subject,
-  html: '<h1>Hello World from this email :)'
-}
+
+const template = readFileSync('./templates/default.html', 'utf8')
 
 console.log('* Using', config.email)
 
-const senders = config.recipers.map(recipe => {
-  HELPER_OPTIONS.to = recipe
+const senders = config.recipers.map(async recipe => {
+  const HELPER_OPTIONS = await mountHelperOptions({ ...config, template, recipe })
   return new Promise((resolve, reject) =>
     transporter.sendMail(HELPER_OPTIONS, (error, info) => error ? reject(error) : resolve(info))
   )
 })
 
 
-Promise.all(senders)
+Promise
+  .all(senders)
   .then(() => console.log('* All email has been sent..'))
   .catch(error => console.log('* Some error happen :(', error))

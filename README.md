@@ -1,7 +1,7 @@
 <p align="center">
   <img src="templates/assets/send-it.png" width="60" />
   <h3 align="center">SendIt</h3>
-  <p align="center">Easy way to send emails to multiple recipers.</p>
+  <p align="center">Better and fastest way to send emails to multiple recipes.</p>
 
   <p align="center">
     <img src="templates/assets/sendit-demo.png" style="width: 100%; height: auto" />

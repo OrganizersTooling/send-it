@@ -36,6 +36,7 @@ module.exports = {
   email: 'hey@gmail.com',
   password: 'passwordOfEmailAbove',
   subject: 'SendIt is Awesome!',
+  // Markdown is supported
   emailText: `
     # Hello World    
     This is a paragrapher with **strong** and _italic_ texts!

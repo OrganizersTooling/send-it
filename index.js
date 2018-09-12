@@ -27,7 +27,7 @@ const template = readFileSync('./templates/default.html', 'utf8')
 
 console.log('* Using', config.email)
 
-const senders = config.recipers.map(async recipe => {
+const senders = config.recipients.map(async recipe => {
   const HELPER_OPTIONS = await mountHelperOptions({ ...config, template, recipe })
   return new Promise((resolve, reject) =>
     transporter.sendMail(HELPER_OPTIONS, (error, info) => error ? reject(error) : resolve(info))

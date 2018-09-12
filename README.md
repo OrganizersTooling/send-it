@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/OrganizersTooling/send-it/master/templates/assets/send-it.png" width="60" />
   <h3 align="center">SendIt</h3>
-  <p align="center">Better and fastest way to send emails to multiple recipes.</p>
+  <p align="center">Better and fastest way to send emails to multiple recipients.</p>
 
   <p align="center">
     <img src="https://raw.githubusercontent.com/OrganizersTooling/send-it/master/templates/assets/sendit-demo.png" style="width: 100%; height: auto" />
@@ -41,7 +41,7 @@ module.exports = {
     # Hello World    
     This is a paragrapher with **strong** and _italic_ texts!
   `,
-  recipers: [
+  recipients: [
     'foo@example.com',
     'bar@example.me'
   ]

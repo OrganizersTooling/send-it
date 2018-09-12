@@ -1,11 +1,17 @@
 {
   "name": "@halfeld/send-it",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "An e-mail sender",
   "main": "index.js",
-  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OrganizersTooling/send-it.git"
+  },
   "files": [
-    "/**/*.**"
+    "helpers/*.**",
+    "index.**",
+    "templates/**/*.**",
+    "templates/*.**"
   ],
   "scripts": {
     "start": "node index.js"

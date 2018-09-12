@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="templates/assets/send-it.png" width="60" />
+  <img src="https://raw.githubusercontent.com/OrganizersTooling/send-it/master/templates/assets/send-it.png" width="60" />
   <h3 align="center">SendIt</h3>
   <p align="center">Better and fastest way to send emails to multiple recipes.</p>
 
   <p align="center">
-    <img src="templates/assets/sendit-demo.png" style="width: 100%; height: auto" />
+    <img src="https://raw.githubusercontent.com/OrganizersTooling/send-it/master/templates/assets/sendit-demo.png" style="width: 100%; height: auto" />
   </p>
 
   <p align="center">
@@ -19,7 +19,7 @@
 ### Install
 
 ```sh
-npm install -g send-it
+npm install -g @halfeld/send-it
 ``` 
 
 ### How to use

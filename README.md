@@ -29,7 +29,7 @@ npm install -g @halfeld/send-it
 send-it
 ```
 
-_send-it.config.js
+_send-it.config.js_
 ```js
 module.exports = {
   name: 'Your name',

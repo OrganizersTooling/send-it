@@ -25,7 +25,7 @@ npm install -g @halfeld/send-it
 ### How to use
 
 ```sh
-# Run this command in the same directory of `send-it.config.json`
+# Run this command in the same directory of `send-it.config.js`
 send-it
 ```
 

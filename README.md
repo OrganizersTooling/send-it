@@ -33,7 +33,7 @@ _send-it.config.js_
 ```js
 module.exports = {
   name: 'Your name',
-  email: 'hey@gmail.com',
+  email: 'hey@gmail.com', // SendIt get your Gravatar image
   password: 'passwordOfEmailAbove',
   subject: 'SendIt is Awesome!',
   // Markdown is supported
